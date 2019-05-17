@@ -16,7 +16,15 @@ def dictionary
 end
 
 def word_subtituter(tweet)
+  shorter = []
   tweet.split(" ").collect do |word|
-    dictionary.keys.include?(word)
-      
+    if dictionary.keys.include?(word)
+      shorter.push(dictionary[word])
+    else 
+      shorter.push(word)
+    end 
+  end 
+  shorter.join(" ")
+  shorter 
+end 
         
