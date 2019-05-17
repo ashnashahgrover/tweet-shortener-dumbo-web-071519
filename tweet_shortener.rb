@@ -18,7 +18,7 @@ end
 def word_substituter(tweet)
   shorter = []
   tweet.split(" ").collect do |word|
-    if dictionary.keys.include?(word)
+    if dictionary.keys.include?(word.downcase)
       shorter.push(dictionary[word])
     else 
       shorter.push(word)
