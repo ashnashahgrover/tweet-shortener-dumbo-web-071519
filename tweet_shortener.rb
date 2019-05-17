@@ -17,4 +17,6 @@ end
 
 def word_subtituter(tweet)
   tweet.split(" ").collect do |word|
-    
+    dictionary.keys.include?(word)
+      
+        
