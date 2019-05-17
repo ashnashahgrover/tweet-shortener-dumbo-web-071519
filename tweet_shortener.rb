@@ -15,7 +15,7 @@ def dictionary
   }
 end
 
-def word_subtituter(tweet)
+def word_substituter(tweet)
   shorter = []
   tweet.split(" ").collect do |word|
     if dictionary.keys.include?(word)
