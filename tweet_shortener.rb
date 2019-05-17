@@ -10,4 +10,6 @@ def dictionary
     "at" => "@", 
     "and" => "&"
   }
-end 
+end
+
+def word_subtituter(tweet)
