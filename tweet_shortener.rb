@@ -16,3 +16,5 @@ def dictionary
 end
 
 def word_subtituter(tweet)
+  tweet.split(" ").collect do |word|
+    
